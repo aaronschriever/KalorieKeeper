@@ -18,11 +18,12 @@ class BmrForm extends Component {
 render(){
     return (
     <div className="bmr-form">
+    <div>
         <label>
-            <input type="radio" group="gender" value="M" checked={this.props.genderSelected==='M'} onChange={this.handleGenderChange}/>Male
+            <input type="radio" group="gender" value="M" checked={this.state.genderSelected==='M'} onChange={this.handleGenderChange}/>Male
         </label>
     <label>
-        <input type="radio" group="gender" value="F" checked={this.props.genderSelected==='F'}/>Female
+        <input type="radio" group="gender" value="F" checked={this.state.genderSelected==='F'} onChange={this.handleGenderChange}/>Female
     </label>
     <br/><input type="number"/>
     <label> height &#40;cm&#41; </label>
@@ -31,7 +32,12 @@ render(){
     <br/><input type="number"/>
     <label> age &#40;years&#41; </label>
     </div>
-    );
+    <div>
+    <input type="submit" value="SAVE" />
+    </div>
+    </div>
+    
+);
 }
 }
 export default BmrForm;
