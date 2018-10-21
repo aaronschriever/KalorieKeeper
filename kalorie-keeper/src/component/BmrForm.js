@@ -86,6 +86,7 @@ class BmrForm extends Component {
       <div className="bmr-form" style={{...styles.bmrForm}}>
         <form onSubmit={this.handleBMRChange}>
           <div>
+          <h3>Calculate your BMR (Basal Metabolic Rate)</h3>
           <div>
             <label>
           Male
