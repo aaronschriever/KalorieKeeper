@@ -21,7 +21,6 @@ const styles = {
     backgroundColor: "#EF3054",
     border: "none",
     borderRadius: ".5em",
-    padding: "5px",
     color: "#eee",
     fontSize:"1em",
     padding:"10px"
@@ -64,9 +63,9 @@ class BmrForm extends Component {
     this.setState(
       {
         bmr: calculateBMR(
-          this.state.weight,
-          this.state.height,
-          this.state.age,
+          parseInt(this.state.weight,10),
+          parseInt(this.state.height,10),
+          parseInt(this.state.age,10),
           this.state.isFemale
         )
       },
@@ -106,7 +105,7 @@ class BmrForm extends Component {
             </div>
             <div>
             <input style={{...styles.dataEntry}}
-              class="data-entry"
+              className="data-entry"
               name="height"
               type="number"
               onChange={this.handleInputChange}
@@ -116,7 +115,7 @@ class BmrForm extends Component {
             </div>
             <div>
             <input style={{...styles.dataEntry}}
-              class="data-entry"
+              className="data-entry"
               name="weight"
               type="number"
               onChange={this.handleInputChange}
@@ -126,7 +125,7 @@ class BmrForm extends Component {
             </div>
             <div>
             <input style={{...styles.dataEntry}}
-            class="data-entry"
+            className="data-entry"
               name="age"
               type="number"
               onChange={this.handleInputChange}

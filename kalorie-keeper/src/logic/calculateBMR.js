@@ -3,15 +3,12 @@ BMR for Men = 66.47 + (13.7 * weight [kg]) + (5 * size [cm]) − (6.8 * age [yea
 BMR for Women = 655.1 + (9.6 * weight [kg]) + (1.8 * size [cm]) − (4.7 * age [years])
 */
 function checkDataTypes(weight, height, age, isFemale){
-if (Number.isInteger(weight)&& Number.isInteger(height) && Number.isInteger(age) && typeof isFemale === 'string'){
-    return true;
-} else {
-        return false;
-    } 
+return (Number.isInteger(weight) && Number.isInteger(height) && Number.isInteger(age) && typeof(isFemale) === "boolean" )
+
 }
 
 function calculateBMR(weight, height, age, isFemale) {
-  //  if (checkDataTypes(weight, height, age, isFemale)){
+    if (checkDataTypes(weight, height, age, isFemale)){
 
     
     if (isFemale === false) {
@@ -24,8 +21,8 @@ function calculateBMR(weight, height, age, isFemale) {
     } else {
         return "error";
     }
-} /*else{
-    return "error incorrect data types";
+} else{
+   return "error incorrect data types";
 }
-}*/
-module.exports = calculateBMR;
+}
+export default calculateBMR;
