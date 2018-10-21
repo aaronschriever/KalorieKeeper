@@ -13,10 +13,12 @@ function ScalesSVG(props){
         <path id="XMLID_1_" d="M322.5 131.6l.3-34.5c.1-5.8-8.9-5.8-9 0l-.3 34.5c0 5.8 9 5.8 9 0z"/>
       </g>
     </g>
+
   </g>
-  <path fill={fill} stroke={color} strokeWidth={strokeWidth} strokeMiterlimit="10" id="_x3C_back_x3E_" d="M535.6 461.4H103.9c-3.8 0-7-3.2-7-7V25.2c0-3.9 3.2-7 7-7h431.7c3.8 0 7 3.1 7 7v429.2c0 3.9-3.1 7-7 7z" />
-  <path fill={fill} stroke={color} strokeWidth={strokeWidth} strokeMiterlimit="10" id="_x3C_Left_x5F_foot_x3E_" d="M242 413.7h-91.1c-2.8 0-5-2.3-5-5V225.5c0-2.8 2.3-5 5-5H242c2.8 0 5 2.3 5 5v183.2c0 2.8-2.3 5-5 5z" />
-  <path fill={fill} stroke={color} strokeWidth={strokeWidth} strokeMiterlimit="10" id="Right_x5F_foot" d="M486.8 413.7h-93.1c-2.2 0-4-1.8-4-4V224.5c0-2.2 1.8-4 4-4h93.1c2.2 0 4 1.8 4 4v185.2c0 2.2-1.8 4-4 4z" />
+  <path fill={fill} stroke={color} strokeWidth={strokeWidth} strokeMiterlimit="10" id="_x3C_back_x3E_"  d="M493.6,461.4H145.9c-27,0-49-22.1-49-49V67.2c0-26.9,22.1-49,49-49h347.7
+	c26.9,0,49,22,49,49v345.2C542.6,439.4,520.6,461.4,493.6,461.4z" />
+    <path fill={fill} stroke={color} strokeWidth={strokeWidth} strokeMiterlimit="10" id="foot" d="M461.6,413.7H173.8c-15.4,0-28-12.6-28-28V248.5c0-15.4,12.6-28,28-28h287.7
+	c15.4,0,28,12.6,28,28v137.2C489.6,401.1,477,413.7,461.6,413.7z"/>
 </svg>);
 }
 export default ScalesSVG;
