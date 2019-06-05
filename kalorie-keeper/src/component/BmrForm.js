@@ -1,31 +1,9 @@
 import React, { Component } from "react";
 import calculateBMR from "../logic/calculateBMR";
 import Switch from "react-switch";
+import styles from "../styles/styles"
 //import { Spring } from "react-spring";
-const styles = {
-  bmrForm :{
-    borderRadius: "25px",
-    padding: "10px",
-    fontSize: "1.5em",
-    color: "#252627"
-  },
-  dataEntry :{
-    borderTop: "0",
-    borderLeft: "0",
-    borderRight: "0",
-    boxShadow: "none",
-   
-  },
-  submitButton:{
-    marginTop: "10px",
-    backgroundColor: "#EF3054",
-    border: "none",
-    borderRadius: ".5em",
-    color: "#eee",
-    fontSize:"1em",
-    padding:"10px"
-  }
-};
+
 
 class BmrForm extends Component {
   constructor(props) {
@@ -82,7 +60,7 @@ class BmrForm extends Component {
   };
   render() {
     return (
-      <div className="bmr-form" style={{...styles.bmrForm}}>
+      <div className="bmr-form" style={{...styles.form}}>
         <form onSubmit={this.handleBMRChange}>
           <div>
           <h3>Calculate your BMR (Basal Metabolic Rate)</h3>

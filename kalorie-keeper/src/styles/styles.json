@@ -1,0 +1,24 @@
+{
+    "form" :{
+    "borderRadius": "25px",
+    "padding": "10px",
+    "fontSize": "1.5em",
+    "color": "#252627"
+  },
+    "dataEntry" :{
+    "borderTop": "0",
+    "borderLeft": "0",
+    "borderRight": "0",
+    "boxShadow": "none"
+   
+  },
+    "submitButton":{
+    "marginTop": "10px",
+    "backgroundColor": "#EF3054",
+    "border": "none",
+    "borderRadius": ".5em",
+    "color": "#eee",
+    "fontSize":"1em",
+    "padding":"10px"
+  }
+}
